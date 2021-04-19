@@ -1,0 +1,19 @@
+#lia adalah seorang penjual nasi goreng, ia ingin anda membantunya dalam pemesanan menu buatlah programnya
+#input pesan apa (ada beberapa menu yang akan dipilih)
+#proses sebanyak apa pesanan dan akan di total 
+# output menu,pertanyaan mau pesan lagi ,total pesanan
+
+menu=['nasi goreng','mie goreng','bihun goreng','kwetiau goreng']
+jawab= menu
+hitung= 0
+print(menu)
+pesan =(input("mau pesan apa? "))
+while(jawab==menu):
+    hitung +=1
+    jawab=(input("ada lagi? "))
+    if jawab== menu:
+        print("ada lagi? ")
+    elif jawab=='tidak':
+        break 
+
+print("total pesanan: ",hitung)
